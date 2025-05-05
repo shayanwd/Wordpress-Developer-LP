@@ -1,0 +1,451 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-family: "Onest", sans-serif;
+    background-color: #FAFAFA;
+}
+
+.container {
+    width: 100%;
+    max-width: 1240px !important;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header-btn {
+    border: 1px solid #111111;
+    border-radius: 50px;
+    padding: 15px 30px;
+    display: block;
+    font-size: 16px;
+}
+
+.hf-container {
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 8px;
+    margin: 0 auto;
+}
+
+.sit-btn {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    padding: 20px 32px;
+    background-color: #fff;
+    color: #111111;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 116%;
+    border-radius: 40px;
+    text-align: center;
+    width: fit-content;
+    display: block;
+    text-transform: capitalize;
+}
+
+.sec-title {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #016492;
+    text-align: left;
+}
+
+.title {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 120%;
+    color: #111111;
+    text-align: left;
+}
+
+.title span {
+    color: #016492;
+}
+
+.team-sec {
+    width: 100%;
+    padding: 120px 0;
+}
+
+.team-sec .title {
+    text-transform: capitalize;
+}
+
+.team-cntn {
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.team-cntn .tm-left {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.team-cntn .tm-left p {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #111111dd;
+    text-align: left;
+}
+
+.team-cntn .tm-left a.sit-btn {
+    background-color: #016492;
+    color: #fff;
+    font-size: 22px;
+    padding: 18px 32px;
+}
+
+.team-cntn .tm-right {
+    background-color: #016492;
+    padding: 60px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.team-cntn .tm-right .no-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.team-cntn .tm-right .no-area h3 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+.team-cntn .tm-right .no-area span {
+    font-family: "Onest", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 120%;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.team-cntn .tm-right .divider {
+    width: 4px;
+    height: 100%;
+    background-color: #fff;
+}
+
+.experience-sec {
+    width: 100%;
+    padding: 99px 0;
+    background-image: url(../images/Logo-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.experience-sec h1 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    line-height: auto;
+    color: #111111;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.experience-sec h1 span {
+    color: #016492;
+}
+
+.services-sec {
+    width: 100%;
+    padding: 60px 0 60px;
+}
+
+.services-sec .sit-btn {
+    background-color: #111111;
+    color: #fff;
+    padding: 16px 32px;
+}
+
+.serv-cntn {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.serv-box-holder {
+    margin-top: -16px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.serv-box-holder .serv-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 0 20px 0 #1010101f;
+}
+
+.serv-box-holder .serv-box img {
+    width: 80px;
+    height: 80px;
+    aspect-ratio: 1/1;
+}
+
+.serv-box-holder .serv-box h2 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 120%;
+    color: #000;
+}
+
+.serv-box-holder .serv-box p {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
+    color: #111111dd;
+}
+
+.serv-box-holder .serv-box a.sit-btn {
+    font-size: 14px;
+}
+
+.serv-cntn .ext-btn {
+    margin: 0 auto;
+}
+
+.conservation-sec {
+    width: 100%;
+    padding: 60px 0 120px;
+}
+
+.cons-cntn {
+    width: 100%;
+    background-color: #016492;
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.cons-cntn .btns {
+    display: flex;
+    gap: 16px;
+}
+
+.cons-cntn .btns .bd {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.cons-cntn h2 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 130%;
+    color: #fff;
+    text-align: left;
+}
+
+footer {
+    width: 100%;
+}
+
+.ft-top-inner {
+    padding: 120px 0 40px;
+    display: grid;
+    grid-template-columns: 1fr 430px;
+    gap: 50px;
+}
+
+.ft-left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.ft-left h2 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 130%;
+    color: #000;
+    text-align: left;
+}
+
+.ft-left .links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ft-left .links li a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.ft-left .social-links li a img {
+    width: 24px;
+    height: 24px;
+    aspect-ratio: 1/1;
+}
+
+.ft-left .links li a span {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+    color: #111111;
+}
+
+.ft-right {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.ft-right .social {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: #111111;
+    border-radius: 12px;
+}
+
+.ft-right .social h5 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 120%;
+    color: #fff;
+}
+
+.ft-right .social ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ft-right .social ul li a {
+    width: 38px;
+    height: 38px;
+    background-color: #016492;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ft-right .social ul li a img {
+    width: 24px;
+    height: 24px;
+    aspect-ratio: 1/1;
+}
+
+.ft-right .social ul li a span {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+    color: #fff;
+}
+
+.ft-right .ft-start-box {
+    padding: 28px 56px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    background-color: #016492;
+    border-radius: 12px;
+}
+
+.ft-right .ft-start-box h3 {
+    font-family: "Onest", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 124%;
+    color: #fff;
+    text-align: center;
+}
+
+.ft-right .ft-start-box p {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+    color: #fff;
+    text-align: center;
+}
+
+.ft-right .ft-start-box a.sit-btn {
+    font-size: 22px;
+    margin-top: 34px;
+    width: -webkit-fill-available;
+}
+
+.footer-bottom {
+    width: 100%;
+    padding: 16px 0;
+}
+
+.fb-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fb-inner p {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #111111dd;
+}
+
+.fb-inner ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.fb-inner ul li a {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #111111dd;
+}
