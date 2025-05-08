@@ -147,6 +147,7 @@ img {
 .work-sec {
     width: 100%;
     padding: 120px 0;
+    overflow: hidden;
 }
 
 .work-sec .title {
