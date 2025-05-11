@@ -46,7 +46,7 @@ img {
     color: #111111;
     font-size: 20px;
     font-weight: 600;
-    line-height: 116%;
+    line-height: 99%;
     border-radius: 40px;
     text-align: center;
     width: fit-content;
@@ -100,21 +100,38 @@ img {
 
 
 
-
-
-
-
-.mq-parent {
+.slider-row {
+    width: 100%;
     display: grid;
     grid-template-columns: max-content max-content max-content;
-    gap: 20px;
+    overflow: hidden;
+    --space: 20px;
 }
 
-.mq-inner {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    animation: moove 40s linear infinite;
+.slider-track {
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(8, max-content);
+    padding-right: var(--space);
+    animation: moove 30s linear infinite;
+}
+
+.bottom-row .slider-track {
+    animation: mooveRev 30s linear infinite;
+    transform: translateX(-100%);
+}
+
+.slider-track .slide {
+    padding-right: var(--space);
+}
+
+.slider-track .slide img {
+    width: 100%;
+    max-width: 367px;
+    display: block;
+    object-fit: cover;
+    border-radius: 18px;
+    aspect-ratio: 367/270;
 }
 
 @keyframes moove {
@@ -126,23 +143,24 @@ img {
         transform: translateX(-100%);
     }
 }
-.carousal-2 {
-    padding-top: 20px;
-}
-/* 
-.carousal-2 .mq-inner {
-    animation: move 40s linear infinite;
-}
 
-@keyframes move {
+
+
+@keyframes mooveRev {
     from {
-        transform: translateX(100%);
+        transform: translateX(-100%);
     }
 
     to {
-        transform: translateX(-0%);
+        transform: translateX(0%);
     }
-} */
+}
+
+.bottom-row {
+    padding-top: 30px;
+}
+
+
 
 .work-sec {
     width: 100%;
@@ -162,6 +180,110 @@ img {
     color: #111111dd;
     text-align: center;
     padding: 24px 0 40px;
+}
+
+
+
+.portfolio-sec {
+    background-image: url('../images/project-bg.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.portfolio-sec .short-title {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 100%;
+    color: #fff;
+}
+
+.portfolio-sec .port-top {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 0;
+}
+
+.portfolio-sec .port-top .port-top-box {
+    padding: 20px 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 120px;
+}
+
+.portfolio-sec .port-top .port-top-box::before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #016492;
+}
+
+.portfolio-sec .port-top .port-top-box .project-name {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 100%;
+    color: #fff;
+}
+
+.portfolio-sec .port-top .port-top-box .port-top-box-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 24px;
+}
+.portfolio-sec .port-top .port-top-box .port-top-box-right .site-logo{
+    width: 100%;
+    max-width: 80px;
+    height: 80px;
+    aspect-ratio: 80/80;
+}
+.portfolio-sec .port-top .port-top-box .port-top-box-right .arrow{
+    width: 100%;
+    max-width: 40px;
+    height: 40px;
+    aspect-ratio: 40/40;
+}
+
+.portfolio-sec .port-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #FFFFFF;
+    padding-top: 40px;
+}
+
+.port-bot-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.port-bot-left .title {
+    color: #fff;
+}
+
+.port-bot-left p {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #fff;
+    max-width: 425px;
+}
+
+.port-bot-right a {
+    text-transform: none;
 }
 
 .client-sec {
@@ -252,6 +374,47 @@ img {
     line-height: 150%;
     text-align: center;
     color: rgba(17, 17, 17, 0.87);
+}
+
+.logo-sec {
+    width: 100%;
+    padding: 60px 0 120px 0;
+}
+
+.mq-parent {
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    overflow: hidden;
+    --space: 100px;
+}
+
+.mq-inner {
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(6, max-content);
+    animation: MoveLogo 40s linear infinite;
+}
+
+.mq-coll {
+    padding-right: var(--space);
+
+}
+
+.mq-coll img {
+    width: 100%;
+    max-width: 120px;
+    height: 77px;
+    object-fit: cover;
+}
+
+@keyframes MoveLogo {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
 }
 
 .team-sec {
@@ -456,6 +619,91 @@ img {
     line-height: 130%;
     color: #fff;
     text-align: left;
+}
+
+
+.feedback-sec {
+    background-image: url('../images/Feedback-bg.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fd-top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.fd-top .title {
+    color: #fff;
+}
+
+.fd-top p {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #fff;
+}
+
+.rev-card {
+    width: 100%;
+    max-width: 770px;
+    height: 408px;
+    padding: 40px;
+    border: 1px solid #FFFFFF3D;
+    border-radius: 24px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.rev-card .rev-cd-top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rev-card .rev-cd-top .cd-top-let {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+}
+
+.rev-card .rev-cd-top .cd-top-let img {
+    width: 100%;
+    max-width: 80px;
+    height: 80px;
+    object-fit: cover;
+    aspect-ratio: 80/80;
+}
+
+.rev-card .rev-name {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 120%;
+    color: #fff;
+}
+
+.rev-card .rev-pos {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 120%;
+    color: #016492;
+}
+
+.rev-card .rev-disc {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #fff;
 }
 
 footer {
