@@ -216,6 +216,8 @@ img {
     height: 120px;
 }
 
+
+
 .portfolio-sec .port-top .port-top-box::before {
     content: '';
     display: block;
@@ -225,6 +227,12 @@ img {
     top: 0;
     left: 0;
     background-color: #016492;
+    transition: all .3s ease-in;
+    opacity: 0;
+}
+
+.portfolio-sec .port-top .port-top-box:hover::before {
+    opacity: 1;
 }
 
 .portfolio-sec .port-top .port-top-box .project-name {
@@ -240,14 +248,20 @@ img {
     align-items: center;
     justify-content: flex-end;
     gap: 24px;
+    transition: all .3s ease-in;
+    opacity: 0;
 }
-.portfolio-sec .port-top .port-top-box .port-top-box-right .site-logo{
+.portfolio-sec .port-top .port-top-box:hover .port-top-box-right{
+    opacity: 1;
+}
+.portfolio-sec .port-top .port-top-box .port-top-box-right .site-logo {
     width: 100%;
     max-width: 80px;
     height: 80px;
     aspect-ratio: 80/80;
 }
-.portfolio-sec .port-top .port-top-box .port-top-box-right .arrow{
+
+.portfolio-sec .port-top .port-top-box .port-top-box-right .arrow {
     width: 100%;
     max-width: 40px;
     height: 40px;
