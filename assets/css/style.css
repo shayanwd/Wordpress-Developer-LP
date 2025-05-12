@@ -251,9 +251,11 @@ img {
     transition: all .3s ease-in;
     opacity: 0;
 }
-.portfolio-sec .port-top .port-top-box:hover .port-top-box-right{
+
+.portfolio-sec .port-top .port-top-box:hover .port-top-box-right {
     opacity: 1;
 }
+
 .portfolio-sec .port-top .port-top-box .port-top-box-right .site-logo {
     width: 100%;
     max-width: 80px;
@@ -430,6 +432,19 @@ img {
         transform: translateX(-100%);
     }
 }
+
+
+.animate-tx-sec h1.ani-text {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 160px;
+    font-weight: bold;
+    line-height: 90%;
+    color: #016492;
+    text-align: start;
+    white-space: nowrap;
+    width: fit-content;
+}
+
 
 .team-sec {
     width: 100%;
