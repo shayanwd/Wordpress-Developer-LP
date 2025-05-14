@@ -13,6 +13,7 @@
         rel="stylesheet">
     <!--  -->
     <!-- links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -41,11 +42,11 @@
         </div>
     </header>
 
-    <section class="banner-sec py-[160px] relative overflow-hidden">
+    <section class="banner-sec py-[160px] pb-[20px] relative overflow-hidden">
         <div class="bn-frags absolute top-0 left-0 w-full h-full z-[-1]">
-            <img src="assets/images/astra.svg" alt="astra" class="absolute top-[180px] left-[3%]">
-            <img src="assets/images/wpBakery.svg" alt="wpBakery" class="absolute top-[33px] left-[43%]">
-            <img src="assets/images/wordpress.svg" alt="wordpress" class="absolute top-[76px] right-[15%]">
+            <img src="assets/images/astra.svg" alt="astra" class="mv absolute top-[180px] left-[3%]">
+            <img src="assets/images/wpBakery.svg" alt="wpBakery" class="mv absolute top-[33px] left-[43%]">
+            <img src="assets/images/wordpress.svg" alt="wordpress" class="mv absolute top-[76px] right-[15%]">
         </div>
         <div class="container">
             <div class="banner-top">
@@ -61,27 +62,33 @@
                 <h1 class="headingg">Crafting <span>WordPress</span> <br> Excellence</h1>
             </div>
 
-            <div class="bn-bottom relative z-1 mt-[160px] grid grid-cols-[max-content_1fr_max-content]">
+            <div
+                class="bn-bottom relative z-1 mt-[160px] grid grid-cols-[max-content_1fr_max-content] items-center gap-[20px]">
                 <div class="btm-frag absolute top-0 right-0 w-full h-full z-[-1]">
                     <img src="assets/images/elementor.svg" alt="elementor"
-                        class="block object-contain absolute -top-[100px] right-[10%]">
+                        class="mv block object-contain absolute -top-[100px] right-[10%]">
                 </div>
-                <div class="bn-c1">
-                    <div class="count">150+</div>
-                    <p>Satisfied Customers</p>
+                <div class="bn-c1 flex items-center gap-[12px]">
+                    <div class="count bg-[#111111] h-[100px] w-[100px] rounded-full flex items-center justify-center">
+                        <span class="text-[#fff] text-[22px] leading-[100%] tracking-[-0.5px] font-semibold">150+</span>
+                    </div>
+                    <p class="text-[#111111] text-[22px] leading-[100%] tracking-[-0.5px] font-regular">Satisfied
+                        Customers</p>
                 </div>
-                <div class="bn-c2">
-                    <p>From custom themes to advanced plugins, our team of skilled WordPress developers brings your
+                <div class="bn-c2 max-w-[314px] mx-auto">
+                    <p class="text-[18px] text-[#2F2F2F] font-regular leading-[125%] tracking-[-0.5px]">From custom
+                        themes to advanced plugins, our team of skilled <br> WordPress developers brings your
                         vision to life.</p>
                 </div>
                 <div class="bn-c3">
-                    <a href="#" class="btn-primary">view projects</a>
+                    <a href="#" class="btn-primary sit-btn">view projects</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="work-sec">
+    <section class="work-sec relative z-1">
+        <img src="assets/images/divi.png" alt="divi" class="mv absolute z-[-1] top-[180px] left-[5%]">
         <div class="container">
             <h1 class="title">Showcasing Our <span>Work</span></h1>
 
@@ -207,7 +214,8 @@
         </div>
     </section>
 
-    <section class="client-sec">
+    <section class="client-sec relative z-1">
+        <img src="assets/images/wpIcon.svg" alt="Wordpress" class="mv absolute z-[-1] top-[120px] right-[10%]">
         <div class="container">
             <h1 class="title">We Work for the <span>Client</span> Around the <span>Globe</span></h1>
             <div class="client-cntn">
@@ -311,40 +319,45 @@
         </div>
         </div>
     </section>
-
-<section class="animate-tx-sec">
-    <h1 class="ani-text">ELEVATE YOUR PRESENCE WITH US</h1>
-</section>
-
-    <section class="team-sec">
-        <div class="container">
-            <h1 class="title">Let our <span>experienced</span> team elevate your <span>digital goals</span></h1>
-            <div class="team-cntn">
-                <div class="tm-left">
-                    <p>
-                        We have successfully completed over 300+ projects from a variety of industries In our team,
-                        designers work alongside developers and digital strategists, we believe this is our winning
-                        recipe for creating digital products that make an impact.
-                    </p>
-
-                    <a href="#" class="sit-btn">view projects</a>
+    <div class="anim-wrap">
+        <section class="animate-tx-sec">
+            <div class="container">
+                <div class="ani-parent">
+                    <h1 class="ani-text">ELEVATE YOUR PRESENCE WITH US</h1>
                 </div>
+            </div>
+        </section>
 
-                <div class="tm-right">
-                    <div class="no-area">
-                        <h3>250+</h3>
-                        <span>5 star ratings</span>
+        <section class="team-sec relative z-1">
+            <img src="assets/images/wooCommerce.png" alt="elementor" class="mv absolute z-[-1] top-[80px] right-[6%]">
+            <div class="container">
+                <h1 class="title">Let our <span>experienced</span> team elevate your <span>digital goals</span></h1>
+                <div class="team-cntn">
+                    <div class="tm-left">
+                        <p>
+                            We have successfully completed over 300+ projects from a variety of industries In our team,
+                            designers work alongside developers and digital strategists, we believe this is our winning
+                            recipe for creating digital products that make an impact.
+                        </p>
+
+                        <a href="#" class="sit-btn">view projects</a>
                     </div>
-                    <div class="divider"></div>
-                    <div class="no-area">
-                        <h3>10</h3>
-                        <span>In-House Experts</span>
+
+                    <div class="tm-right">
+                        <div class="no-area">
+                            <h3>250+</h3>
+                            <span>5 star ratings</span>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="no-area">
+                            <h3>10</h3>
+                            <span>In-House Experts</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
+        </section>
+    </div>
     <section class="experience-sec">
         <div class="container">
             <h1>Crafting digital experiences since <span>2004</span></h1>
@@ -429,7 +442,7 @@
                 <p>we’re collaborators - We build tight-knit partnerships with our clients</p>
             </div>
 
-            <div class="fd-bottom mt-[54px]">
+            <!-- <div class="fd-bottom mt-[54px]">
                 <div class="rev-card">
                     <div class="rev-cd-top">
                         <div class="cd-top-let">
@@ -447,6 +460,196 @@
                             Even though I'm reluctant to share them, I tell everyone about them. People often ask where
                             i got my designs done and request for their contact. And I can understand why.
                         </p>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <div class="fd-slid mt-[54px]">
+            <div class="swiper fdSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="rev-card">
+                            <div class="rev-cd-top">
+                                <div class="cd-top-let">
+                                    <img src="assets/images/rev-img.svg" alt="">
+                                    <h6 class="rev-name">Jonas Birk</span>
+                                </div>
+                                <div class="cd-top-right">
+                                    <h6 class="rev-pos">CEO & Founder - Coindive</span>
+                                </div>
+                            </div>
+
+                            <div class="rev-cd-bot">
+                                <p class="rev-disc">
+                                    I think I've never recommended anyone as frequently as I have WordPress Development
+                                    Company.
+                                    Even though I'm reluctant to share them, I tell everyone about them. People often
+                                    ask where
+                                    i got my designs done and request for their contact. And I can understand why.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="rev-card">
+                            <div class="rev-cd-top">
+                                <div class="cd-top-let">
+                                    <img src="assets/images/rev-img.svg" alt="">
+                                    <h6 class="rev-name">Jonas Birk</span>
+                                </div>
+                                <div class="cd-top-right">
+                                    <h6 class="rev-pos">CEO & Founder - Coindive</span>
+                                </div>
+                            </div>
+
+                            <div class="rev-cd-bot">
+                                <p class="rev-disc">
+                                    I think I've never recommended anyone as frequently as I have WordPress Development
+                                    Company.
+                                    Even though I'm reluctant to share them, I tell everyone about them. People often
+                                    ask where
+                                    i got my designs done and request for their contact. And I can understand why.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="rev-card">
+                            <div class="rev-cd-top">
+                                <div class="cd-top-let">
+                                    <img src="assets/images/rev-img.svg" alt="">
+                                    <h6 class="rev-name">Jonas Birk</span>
+                                </div>
+                                <div class="cd-top-right">
+                                    <h6 class="rev-pos">CEO & Founder - Coindive</span>
+                                </div>
+                            </div>
+
+                            <div class="rev-cd-bot">
+                                <p class="rev-disc">
+                                    I think I've never recommended anyone as frequently as I have WordPress Development
+                                    Company.
+                                    Even though I'm reluctant to share them, I tell everyone about them. People often
+                                    ask where
+                                    i got my designs done and request for their contact. And I can understand why.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="rev-card">
+                            <div class="rev-cd-top">
+                                <div class="cd-top-let">
+                                    <img src="assets/images/rev-img.svg" alt="">
+                                    <h6 class="rev-name">Jonas Birk</span>
+                                </div>
+                                <div class="cd-top-right">
+                                    <h6 class="rev-pos">CEO & Founder - Coindive</span>
+                                </div>
+                            </div>
+
+                            <div class="rev-cd-bot">
+                                <p class="rev-disc">
+                                    I think I've never recommended anyone as frequently as I have WordPress Development
+                                    Company.
+                                    Even though I'm reluctant to share them, I tell everyone about them. People often
+                                    ask where
+                                    i got my designs done and request for their contact. And I can understand why.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="rev-card">
+                            <div class="rev-cd-top">
+                                <div class="cd-top-let">
+                                    <img src="assets/images/rev-img.svg" alt="">
+                                    <h6 class="rev-name">Jonas Birk</span>
+                                </div>
+                                <div class="cd-top-right">
+                                    <h6 class="rev-pos">CEO & Founder - Coindive</span>
+                                </div>
+                            </div>
+
+                            <div class="rev-cd-bot">
+                                <p class="rev-disc">
+                                    I think I've never recommended anyone as frequently as I have WordPress Development
+                                    Company.
+                                    Even though I'm reluctant to share them, I tell everyone about them. People often
+                                    ask where
+                                    i got my designs done and request for their contact. And I can understand why.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="rev-card">
+                            <div class="rev-cd-top">
+                                <div class="cd-top-let">
+                                    <img src="assets/images/rev-img.svg" alt="">
+                                    <h6 class="rev-name">Jonas Birk</span>
+                                </div>
+                                <div class="cd-top-right">
+                                    <h6 class="rev-pos">CEO & Founder - Coindive</span>
+                                </div>
+                            </div>
+
+                            <div class="rev-cd-bot">
+                                <p class="rev-disc">
+                                    I think I've never recommended anyone as frequently as I have WordPress Development
+                                    Company.
+                                    Even though I'm reluctant to share them, I tell everyone about them. People often
+                                    ask where
+                                    i got my designs done and request for their contact. And I can understand why.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="rev-card">
+                            <div class="rev-cd-top">
+                                <div class="cd-top-let">
+                                    <img src="assets/images/rev-img.svg" alt="">
+                                    <h6 class="rev-name">Jonas Birk</span>
+                                </div>
+                                <div class="cd-top-right">
+                                    <h6 class="rev-pos">CEO & Founder - Coindive</span>
+                                </div>
+                            </div>
+
+                            <div class="rev-cd-bot">
+                                <p class="rev-disc">
+                                    I think I've never recommended anyone as frequently as I have WordPress Development
+                                    Company.
+                                    Even though I'm reluctant to share them, I tell everyone about them. People often
+                                    ask where
+                                    i got my designs done and request for their contact. And I can understand why.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="rev-card">
+                            <div class="rev-cd-top">
+                                <div class="cd-top-let">
+                                    <img src="assets/images/rev-img.svg" alt="">
+                                    <h6 class="rev-name">Jonas Birk</span>
+                                </div>
+                                <div class="cd-top-right">
+                                    <h6 class="rev-pos">CEO & Founder - Coindive</span>
+                                </div>
+                            </div>
+
+                            <div class="rev-cd-bot">
+                                <p class="rev-disc">
+                                    I think I've never recommended anyone as frequently as I have WordPress Development
+                                    Company.
+                                    Even though I'm reluctant to share them, I tell everyone about them. People often
+                                    ask where
+                                    i got my designs done and request for their contact. And I can understand why.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -544,6 +747,59 @@
             </div>
         </div>
     </footer>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <script>
+        // Initialize Lenis smooth scrolling
+        const lenis = new Lenis({
+            duration: 1.2,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            direction: 'vertical',
+            gestureDirection: 'vertical',
+            smooth: true,
+            mouseMultiplier: 1,
+            smoothTouch: false,
+            touchMultiplier: 2,
+            infinite: false,
+        });
+
+        // Integrate Lenis with GSAP ScrollTrigger
+        lenis.on('scroll', ScrollTrigger.update);
+
+        gsap.ticker.add((time) => {
+            lenis.raf(time * 1000);
+        });
+
+        gsap.ticker.lagSmoothing(0);
+
+        // Initialize Swiper
+        var swiper = new Swiper(".fdSwiper", {
+            slidesPerView: 2,
+            spaceBetween: 40,
+            centeredSlides: true,
+            loop: true,
+            speed: 1000,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+
+
 </body>
 
 </html>

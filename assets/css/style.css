@@ -80,6 +80,33 @@ img {
 
 /* R css */
 
+.mv {
+    animation: mv 10s linear infinite;
+}
+
+@keyframes mv {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(5px, 5px);
+    }
+
+    50% {
+        transform: translate(0, 10px);
+    }
+
+    75% {
+        transform: translate(-5px, 5px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+
 .headingg {
     font-weight: 600;
     font-size: 120px;
@@ -93,6 +120,11 @@ img {
     background: linear-gradient(180deg, #016492 0%, #4D3F9B 100%);
     background-clip: text;
     color: transparent;
+}
+
+.btn-primary.sit-btn {
+    background-color: #016492;
+    color: #fff;
 }
 
 /* R css end */
@@ -180,6 +212,8 @@ img {
     color: #111111dd;
     text-align: center;
     padding: 24px 0 40px;
+    max-width: 852px;
+    margin: 0 auto;
 }
 
 
@@ -380,7 +414,7 @@ img {
     height: 600px;
     object-fit: cover;
     border-radius: 24px;
-    padding-bottom: 24px;
+    margin-bottom: 24px;
 }
 
 .pass-sec h4 {
@@ -402,6 +436,21 @@ img {
     grid-template-columns: max-content max-content max-content;
     overflow: hidden;
     --space: 100px;
+    position: relative;
+}
+
+.mq-parent::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+    background: linear-gradient(90deg, #FAFAFA 0%, transparent 50.21%, #FAFAFA 100%);
+
 }
 
 .mq-inner {
@@ -433,6 +482,10 @@ img {
     }
 }
 
+.animate-tx-sec {
+    width: 100%;
+    overflow: hidden;
+}
 
 .animate-tx-sec h1.ani-text {
     font-family: "Plus Jakarta Sans", sans-serif;
