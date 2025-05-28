@@ -76,12 +76,10 @@ img {
     color: #016492;
 }
 
-
-
 /* R css */
 
 .mv {
-    animation: mv 10s linear infinite;
+    animation: mv 6s linear infinite;
 }
 
 @keyframes mv {
@@ -129,7 +127,22 @@ img {
 
 /* R css end */
 
+.header-nav {
+    margin-right: 30px;
+}
 
+.header-nav ul {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.header-nav ul li a {
+    font-size: 16px;
+    line-height: 100%;
+    display: block;
+    color: #000;
+}
 
 
 .slider-row {
@@ -352,7 +365,7 @@ img {
 
 .client-cntn {
     display: grid;
-    grid-template-columns: 1fr 640px;
+    grid-template-columns: 1fr 1.3fr;
     align-items: center;
     justify-content: space-between;
     gap: 40px;
@@ -644,6 +657,7 @@ img {
 }
 
 .serv-box-holder .serv-box h2 {
+    text-align: center;
     font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 24px;
     font-weight: 600;
@@ -732,8 +746,8 @@ img {
 
 .rev-card {
     width: 100%;
-    max-width: 770px;
-    height: 408px;
+    /* max-width: 770px; */
+    min-height: 408px;
     padding: 40px;
     border: 1px solid #FFFFFF3D;
     border-radius: 24px;
@@ -795,7 +809,7 @@ footer {
 .ft-top-inner {
     padding: 120px 0 40px;
     display: grid;
-    grid-template-columns: 1fr 430px;
+    grid-template-columns: 1fr 38%;
     gap: 50px;
 }
 
