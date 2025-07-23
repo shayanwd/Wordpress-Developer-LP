@@ -255,16 +255,16 @@ img {
 }
 
 .portfolio-sec .port-top .port-top-box {
-    padding: 20px 36px;
+    padding: 20px 36px 20px 36px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
-    height: 120px;
+    transition: all .2s ease-in !important;
 }
 
 
-
+/* 
 .portfolio-sec .port-top .port-top-box::before {
     content: '';
     display: block;
@@ -276,10 +276,10 @@ img {
     background-color: #016492;
     transition: all .3s ease-in;
     opacity: 0;
-}
+} */
 
-.portfolio-sec .port-top .port-top-box:hover::before {
-    opacity: 1;
+.portfolio-sec .port-top .port-top-box:hover {
+    border-left: 16px solid #016492;
 }
 
 .portfolio-sec .port-top .port-top-box .project-name {
